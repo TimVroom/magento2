@@ -26,13 +26,14 @@
 
     DirectoryIndex index.php
 
+SetEnv MAGE_MODE developer
 <IfModule mod_php5.c>
 
 ############################################
 ## adjust memory limit
 
 #    php_value memory_limit 64M
-    php_value memory_limit 256M
+    php_value memory_limit 512M
     php_value max_execution_time 18000
 
 ############################################
@@ -110,7 +111,7 @@
 ## you can put here your magento root folder
 ## path relative to web root
 
-    #RewriteBase /magento/
+    RewriteBase /magento2/
 
 ############################################
 ## workaround for HTTP authorization
