@@ -177,7 +177,6 @@ SetEnv MAGE_MODE developer
         order allow,deny
         deny from all
     </Files>
-
 ############################################
 ## If running in cluster environment, uncomment this
 ## http://developer.yahoo.com/performance/rules.html#etags
